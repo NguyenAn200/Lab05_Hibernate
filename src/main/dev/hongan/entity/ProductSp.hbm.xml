@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 28, 2024, 10:31:07 PM by Hibernate Tools 4.3.6.Final -->
+<hibernate-mapping>
+    <class name="dev.hongan.entity.ProductSp" table="ProductSP" schema="dbo" catalog="Lab05_Hibernate" optimistic-lock="version">
+        <id name="masp" type="serializable">
+            <column name="Masp" />
+            <generator class="assigned" />
+        </id>
+        <property name="tenSanPham" type="serializable">
+            <column name="TenSanPham" />
+        </property>
+        <property name="anhSanPham" type="serializable">
+            <column name="AnhSanPham" />
+        </property>
+        <property name="soLuong" type="java.lang.Integer">
+            <column name="SoLuong" />
+        </property>
+        <property name="donGia" type="java.lang.Double">
+            <column name="DonGia" precision="53" scale="0" />
+        </property>
+        <property name="trangThai" type="java.lang.Boolean">
+            <column name="TrangThai" />
+        </property>
+    </class>
+</hibernate-mapping>
